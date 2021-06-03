@@ -3,13 +3,9 @@ Given a string of text, return true or false indicating whether or not the text 
 e.g palindromeChecker('racecar') // will return true
 */
 
-
-
-
 function palindromeChecker(text) {
-    v// Code goes here
+  text = text.toLowerCase();
+  return text == [...text].reverse().join("");
 }
-
-
 
 module.exports = palindromeChecker;
